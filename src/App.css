@@ -1,38 +1,172 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #102a42;
+  background-color: #4b145b;
+}
+
+.container {
+  padding: 75px 30px;
+}
+
+.faq-wrap {
+  padding: 35px;
+  background-color: #fff;
+  border-radius: 3px;
+  flex: 0 0 100%;
+  max-width: 74%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  flex: 0 0 30%;
+  max-width: 30%;
+  padding-right: 15px;
+}
+
+.title h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* 
+.title h1::before {
+  content: '';
+  position:absolute;
+  height: 2px;
+  right: 42%;
+  background-color: #49a6e9;
+  top: 88px;
+  left: 42%;
+} */
+
+.questions {
+  flex: 0 0 70%;
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question-section {
+  flex: 0 0 100%;
+  border: 2px solid #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 17px 20px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+}
+
+.head {
+  flex: 0 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question {
+  flex: 0 0 90%;
+  max-width: 90%;
+  padding-top: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.btn {
+  flex: 0 0 10%;
+  max-width: 10%;
+  text-align: right;
+}
+
+.answer {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+.answer p {
+  color: #324d67;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-show {
+  background: #eae6eb;
+  color: #b4345c;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  /* justify-self: center; */
+  text-align: center;
+  padding-top: 3px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(max-width:1000px){
+  .tour {
+    flex: 0 0 70%;
+    max-width: 70%;
+    margin-bottom: 20px;
+  }
+  .tours-wrap {
+    justify-content: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media(max-width:1070px){
+  .faq-wrap {
+    flex: 0 0 100%;
+    max-width: 92%;
   }
 }
+
+@media(max-width:991px){
+  .title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 25px;
+  }
+  .questions {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .faq-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+@media(max-width:795px){
+  .question {
+    font-size: 14px;
+  }
+}
+
+
+
+
